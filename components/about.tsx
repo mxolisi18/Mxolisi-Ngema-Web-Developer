@@ -19,8 +19,8 @@ export default function About() {
               that live on the internet, whether that be websites, applications, or anything in between.
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
-              I'm currently studying at Richfield Graduate Institute College doing Information Technology specialising in Software Development and this is my final year. 
-              My goal is to always build products that provide pixel-perfect, performant experiences.
+              I have completed my Information Technology studies at Richfield Graduate Institute of Technology, specialising in Software Development.
+              My recent work and learning have focused on building practical, data-driven and web-based solutions, with an emphasis on clean design, performance, and real-world impact.
             </p>
             <Button asChild className="bg-emerald-500 hover:bg-emerald-600">
               <a href="/MXOLISI_NGEMA_CV.pdf" target="_blank" rel="noopener noreferrer">
