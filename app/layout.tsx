@@ -69,13 +69,17 @@ export default function RootLayout({
             }),
           }}
         />
-        {/* Google Analytics (GA4) */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-BHMNCL402C`}></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-BHMNCL402C');`,
-          }}
-        />
+        {/* Google Analytics (GA4) - load only in production and when NEXT_PUBLIC_GA_ID is set */}
+        {process.env.NEXT_PUBLIC_GA_ID && (process.env.NEXT_PUBLIC_VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production') ? (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');`,
+              }}
+            />
+          </>
+        ) : null}
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
