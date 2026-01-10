@@ -69,6 +69,13 @@ export default function RootLayout({
             }),
           }}
         />
+        {/* Google Analytics (GA4) */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-BHMNCL402C`}></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-BHMNCL402C');`,
+          }}
+        />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
