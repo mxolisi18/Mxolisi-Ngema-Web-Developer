@@ -16,22 +16,26 @@ export const metadataBase = new URL("https://mxolisi-ngema-web-developer.vercel.
 
 // additional SEO metadata
 export const seo: Metadata = {
-  keywords: ["Mxolisi Ngema", "Mxolisi", "web developer", "portfolio"],
-  authors: [{ name: "Mxolisi Ngema" }],
+  keywords: ["Mxolisi Mazwi Ngema", "Mxolisi", "web developer", "portfolio"],
+  authors: [{ name: "Mxolisi Mazwi Ngema" }],
   openGraph: {
-    title: "Mxolisi Ngema – Web Developer",
+    title: "Mxolisi Mazwi Ngema – Web Developer",
     description:
-      "Portfolio website of Mxolisi Ngema showcasing web projects, skills, and contact information.",
+      "Portfolio website of Mxolisi Mazwi Ngema showcasing web projects, skills, and contact information.",
     url: metadataBase.toString(),
-    siteName: "Mxolisi Ngema – Portfolio",
+    siteName: "Mxolisi Mazwi Ngema – Portfolio",
     locale: "en_US",
     type: "website",
+    images: [
+      { url: new URL("/og.svg", metadataBase).toString(), alt: "Mxolisi Mazwi Ngema — Web Developer" },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mxolisi Ngema – Web Developer",
+    title: "Mxolisi Mazwi Ngema – Web Developer",
     description:
-      "Portfolio website of Mxolisi Ngema showcasing web projects, skills, and contact information.",
+      "Portfolio website of Mxolisi Mazwi Ngema showcasing web projects, skills, and contact information.",
+    images: [new URL("/og.svg", metadataBase).toString()],
   },
   robots: {
     index: true,
@@ -55,9 +59,13 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Mxolisi Ngema",
+              name: "Mxolisi Mazwi Ngema",
               url: metadataBase.toString(),
-              sameAs: [metadataBase.toString()],
+              sameAs: [
+                metadataBase.toString(),
+                "https://github.com/mxolisi18",
+                "https://www.linkedin.com/in/mxolisi-ngema",
+              ],
             }),
           }}
         />

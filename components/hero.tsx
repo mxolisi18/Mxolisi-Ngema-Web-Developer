@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 via-slate-900 to-slate-950"></div>
       <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6">
         <span className="block">Hi, I'm </span>
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Mxolisi Ngema</span>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Mxolisi Mazwi Ngema</span>
       </h1>
       <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mb-8">
         I'm a full-stack developer specializing in building exceptional digital experiences.
