@@ -51,8 +51,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const maintenance = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true"
-
-  /*
+  
   // shared head content (keeps canonical, sitemap, JSON-LD and GA logic)
   const Head = (
     <head>
@@ -87,7 +86,7 @@ export default function RootLayout({
         </>
       ) : null}
     </head>
-  ) */
+  )
 
   // Render a minimal maintenance page site-wide when enabled
   if (maintenance) {
