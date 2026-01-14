@@ -6,17 +6,17 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
+/*export const metadata: Metadata = {
   title: "Mxolisi Ngema – Web Developer",
   description: "Portfolio website of Mxolisi Ngema showcasing web projects, skills, and contact information.",
     generator: 'v0.dev'
-}
+}*/
 
 export const metadataBase = new URL("https://mxolisi-ngema-web-developer.vercel.app")
 
 
 
-// additional SEO metadata
+/* additional SEO metadata
 export const seo: Metadata = {
   keywords: ["Mxolisi Mazwi Ngema", "Mxolisi", "web developer", "portfolio", "Mxolisi Ngema"],
   authors: [{ name: "Mxolisi Mazwi Ngema" }],
@@ -43,7 +43,7 @@ export const seo: Metadata = {
     index: true,
     follow: true,
   },
-}
+}*/
 
 export default function RootLayout({
   children,
@@ -51,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   const maintenance = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true"
-
+/*
   // shared head content (keeps canonical, sitemap, JSON-LD and GA logic)
   const Head = (
     <head>
@@ -73,7 +73,7 @@ export default function RootLayout({
           }),
         }}
       />
-      {/* Google Analytics (GA4) - load only in production and when NEXT_PUBLIC_GA_ID is set */}
+      {/* Google Analytics (GA4) - load only in production and when NEXT_PUBLIC_GA_ID is set}
       {process.env.NEXT_PUBLIC_GA_ID &&
       (process.env.NEXT_PUBLIC_VERCEL_ENV === "production" || process.env.NODE_ENV === "production") ? (
         <>
@@ -86,7 +86,7 @@ export default function RootLayout({
         </>
       ) : null}
     </head>
-  )
+  )*/
 
   // Render a minimal maintenance page site-wide when enabled
   if (maintenance) {
