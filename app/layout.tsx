@@ -52,6 +52,7 @@ export default function RootLayout({
 }) {
   const maintenance = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true"
 
+  /*
   // shared head content (keeps canonical, sitemap, JSON-LD and GA logic)
   const Head = (
     <head>
@@ -73,7 +74,7 @@ export default function RootLayout({
           }),
         }}
       />
-      {/* Google Analytics (GA4) - load only in production and when NEXT_PUBLIC_GA_ID is set */}
+      {// Google Analytics (GA4) - load only in production and when NEXT_PUBLIC_GA_ID is set }
       {process.env.NEXT_PUBLIC_GA_ID &&
       (process.env.NEXT_PUBLIC_VERCEL_ENV === "production" || process.env.NODE_ENV === "production") ? (
         <>
@@ -86,7 +87,7 @@ export default function RootLayout({
         </>
       ) : null}
     </head>
-  )
+  ) */
 
   // Render a minimal maintenance page site-wide when enabled
   if (maintenance) {
