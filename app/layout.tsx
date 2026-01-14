@@ -51,7 +51,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const maintenance = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true"
+  const maintenance = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "false"
   
   // shared head content (keeps canonical, sitemap, JSON-LD and GA logic)
   const Head = (
