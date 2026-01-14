@@ -6,17 +6,17 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
-/*export const metadata: Metadata = {
+export const metadata: Metadata = {
   title: "Mxolisi Ngema – Web Developer",
   description: "Portfolio website of Mxolisi Ngema showcasing web projects, skills, and contact information.",
     generator: 'v0.dev'
-}*/
+}
 
 export const metadataBase = new URL("https://mxolisi-ngema-web-developer.vercel.app")
 
 
 
-/* additional SEO metadata
+// additional SEO metadata
 export const seo: Metadata = {
   keywords: ["Mxolisi Mazwi Ngema", "Mxolisi", "web developer", "portfolio", "Mxolisi Ngema"],
   authors: [{ name: "Mxolisi Mazwi Ngema" }],
@@ -43,7 +43,7 @@ export const seo: Metadata = {
     index: true,
     follow: true,
   },
-}*/
+}
 
 export default function RootLayout({
   children,
