@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     generator: 'v0.dev'
 }
 
-//export const metadataBase = new URL("https://mxolisi-ngema-web-developer.vercel.app")
-export const metadataBase = new URL("https://mxolisi-mazwi-ngema-portfolio.vercel.app")
+export const metadataBase = new URL("https://mxolisi-ngema-web-developer.vercel.app")
+//export const metadataBase = new URL("https://mxolisi-mazwi-ngema-portfolio.vercel.app")
 
 
 
