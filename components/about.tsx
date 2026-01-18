@@ -9,7 +9,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/2 flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-emerald-500">
-              <Image src="/image-1.jpeg?height=320&width=320" alt="Mxolisi Ngema" fill className="object-cover" />
+              <Image src="/image-1.jpg?height=320&width=320" alt="Mxolisi Ngema" fill className="object-cover" />
             </div>
           </div>
           <div className="md:w-1/2">
