@@ -15,7 +15,7 @@ export default function About() {
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-6 text-slate-900 dark:text-white">About Me</h2>
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-4">
-              Hello! I'm Mxolisi Ngema, a passionate full-stack developer based in South Africa. I enjoy creating things
+              Hello! I'm Mxolisi Mazwi Ngema, a passionate full-stack developer based in South Africa. I enjoy creating things
               that live on the internet, whether that be websites, applications, or anything in between.
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
