@@ -13,7 +13,7 @@ export default function Skills() {
       id: 2,
       title: "Backend Development",
       icon: <Server className="h-8 w-8 text-emerald-500" />,
-      skills: ["Node.js", "Python", "Django", "RESTful APIs"],
+      skills: ["Node.js", "Python", "RESTful APIs", "C#", "PHP"],
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export default function Skills() {
       id: 5,
       title: "Programming Languages",
       icon: <Code className="h-8 w-8 text-emerald-500" />,
-      skills: ["JavaScript", "TypeScript", "Python", "Java"],
+      skills: ["JavaScript", "TypeScript", "Python", "Java", "C#", "PHP"],
     }
   ]
 
