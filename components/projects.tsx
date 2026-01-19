@@ -7,15 +7,26 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Weather App",
-      description: "A weather application that provides real-time weather updates and forecasts.",
+      title: "Khabalidaka UpRising",
+      description: "Khabalidaka UpRising is a professional business website showcasing an agricultural company focused on sustainable farming, skills development, and community empowerment.",
       image: "/image.png?height=400&width=600",
-      tags: ["React", "TypeScript", "Tailwind CSS"],
+      tags: ["HTML", "CSS", "JavaScript", "C#", "ASP.NET"],
       githubLink: "https://github.com/mxolisi18",
-      liveLink: "https://github.com/mxolisi18",
+      liveLink: "https://khabalidakauprising.co.za/",
     },
-    {
+
+        {
       id: 2,
+      title: "Crime Reporting System",
+      description: "Crime Reporting System is a web application that allows community members to report crimes anonymously, promoting safety by enabling reporting without fear or judgment.",
+      image: "/image.png?height=400&width=600",
+      tags: ["HTML", "CSS", "JavaScript", "PHP"],
+      githubLink: "https://github.com/mxolisi18/Crime-Pulse",
+      liveLink: "https://github.com/mxolisi18/Crime-Pulse",
+    },
+    
+    {
+      id: 3,
       title: "Tic Tac Toe",
       description: "A simple Tic Tac Toe game built with HTML, CSS and JavScript.",
       image: "/tic-tac-toe.png?height=400&width=600",
