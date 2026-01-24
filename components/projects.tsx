@@ -9,7 +9,7 @@ export default function Projects() {
       id: 1,
       title: "Khabalidaka UpRising",
       description: "Khabalidaka UpRising is a professional business website showcasing an agricultural company focused on sustainable farming, skills development, and community empowerment.",
-      image: "/image.png?height=400&width=600",
+      image: "/Khabalidaka.png?height=400&width=600",
       tags: ["HTML", "CSS", "JavaScript", "C#", "ASP.NET"],
       githubLink: "https://github.com/mxolisi18",
       liveLink: "https://khabalidakauprising.co.za/",
